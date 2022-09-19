@@ -11,7 +11,7 @@
             <p class="mb-3">Le color blocking de cette Dunk Low mise sur la simplicité. La silhouette basse propose ainsi une conception entièrement en cuir lisse, dont la tige blanche est contrastée par des empiècements noirs. Ces deux couleurs synonymes d’intemporalité se côtoient également sur les semelles, jusqu’aux brandings sur la languette et le talon. Sobre mais efficace !
             </p>
             <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-xl" href="#">Voir plus</a>
+              <a class="btn btn-primary btn-xl" href="#">Voir plus test new commit</a>
             </div>
           </div>
         </div>
