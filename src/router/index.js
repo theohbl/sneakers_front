@@ -40,7 +40,7 @@ const routes = [
     },
 
     {
-        path: '/create',
+        path: '/create/:id',
         name: 'create',
 
         component: () => import('../views/CreateForm.vue')

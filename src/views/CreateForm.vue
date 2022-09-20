@@ -64,7 +64,7 @@
         </div>
       </div>
       <div class="col-12">
-        <button @click='handleSaveBtn' class="btn btn-primary" type="button">Create</button>
+        <button @click='handleSaveBtn' class="btn btn-primary" type="button">Create or Edit</button>
       </div>
     </form>
   </div>
@@ -116,12 +116,28 @@
       },
       async editOneSneaker(){
         console.warn('ici en edit')
+        const data = await axios.patch(API_SNEAKERS + '/' + this.$route.params.id,
+          this.sneakers,
+        {  headers: {
+            'Content-type': 'application/x-www-form-urlencoded',
+          },
+          
+        });
+        
+        this.sneakers=data.data.message
         console.log(this.sneakers)
       }
 
     },
     async created(){
-      
+
+      let {id}= this.$route.params;
+      if(id=="new"){
+        this.onEdit=false;
+      }else{
+        this.onEdit=true;
+      }
+      console.log(this.onEdit,'🎅',this.$route.params)
     }
   }
   </script>
