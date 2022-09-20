@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import CoffeeHome from '../components/CoffeeHome.vue'
+import CoffeeHome from '../views/CoffeeHome.vue'
 
 Vue.use(VueRouter)
 
@@ -16,27 +16,27 @@ const routes = [
         // route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "about" */ '../components/CoffeeAbout.vue')
+        component: () => import(/* webpackChunkName: "about" */ '../views/CoffeeAbout.vue')
     },
 
     {
         path: '/store',
         name: 'Store',
 
-        component: () => import('../components/CoffeeStore.vue')
+        component: () => import('../views/CoffeeStore.vue')
     },
     {
         path: '/products',
         name: 'products',
 
-        component: () => import('../components/CoffeeProducts.vue')
+        component: () => import('../views/CoffeeProducts.vue')
     },
     
     {
         path: '/products/:productId',
         name: 'productsDetails',
 
-        component: () => import('../components/CoffeeProductsDetails.vue')
+        component: () => import('../views/CoffeeProductsDetails.vue')
     }
 
 
