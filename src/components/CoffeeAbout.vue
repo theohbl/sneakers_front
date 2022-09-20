@@ -7,11 +7,12 @@
             <div class="col-xl-9 col-lg-10 mx-auto">
               <div class="bg-faded rounded p-5">
                 <h2 class="section-heading mb-4">
-                  <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
-                  <span class="section-heading-lower">About Our Cafe</span>
+                  <span class="section-heading-upper">Notre histoire</span>
+                  <span class="section-heading-lower">About Our shop</span>
                 </h2>
-                <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
-                <p class="mb-0">We guarantee that you will fall in <em>lust</em> with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.</p>
+                <p>Depuis 2000 le concept store Sneakers by Clément & Théo s'efforce de vous proposer, à la fois dans sa boutique de Clermont-Ferrand mais bien sûr sur son site de vente en ligne, une sélection de vêtements, chaussures, sneakers et accessoires pour hommes et femmes.</p>
+                <p>Nous sommes ravis de collaborer depuis plusieurs saisons avec New Balance, Nike, Schmoove, No Name, Armistice et la collection CARHARTT WIP. Les sneakers addicts peuvent retrouver une sélection pointue et des modèles rares. Nous proposons les montres Nixon, les chaussettes Alfredo Gonzales et Stance. Le label Edwin, les marques danoises Rains et Knowledge Cotton Apparel, DEUS et la marque JOHNNY ROMANCE vous offre une selection de tee shirt brodés en France. Ainsi que Le vent à la Francaise, notre marque 100% made in france. Et d’autres labels à découvrir tels que Karhu, Saucony, Veja ou encore Step Art</p>
+                
               </div>
             </div>
           </div>

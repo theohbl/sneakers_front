@@ -3,16 +3,17 @@
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
         <div class="collapse navbar-collapse" id="navbarResponsive">
+          <a href="CoffeeHome.vue"><img src="../assets/img/S.png" height="120" alt=""></a>
           <ul class="navbar-nav mx-auto">
             <li class="nav-item active px-lg-4">
               <router-link class="nav-link text-uppercase text-expanded" :to="{ name: 'Home' }">Home</router-link>
             </li>
             <li class="nav-item px-lg-4">
               <router-link class="nav-link text-uppercase text-expanded router-link-exact-path-active"
-                :to="{ name: 'About' }">About</router-link>
+                :to="{ name: 'About' }">à propos</router-link>
             </li>
             <li class="nav-item px-lg-4">
-              <router-link class="nav-link text-uppercase text-expanded" :to="{ name: 'products' }">Products
+              <router-link class="nav-link text-uppercase text-expanded" :to="{ name: 'products' }">Produits
               </router-link>
             </li>
             <li class="nav-item px-lg-4">
