@@ -1,22 +1,28 @@
 <template>
     <div>
-    <section class="page-section clearfix">
-      <div class="container">
-        <div class="intro">
-          <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="../assets/img/panda.jpg" alt="">
-          <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Nike Dunk Low White Black « Panda »</span>
-            </h2>
-            <p class="mb-3">Le color blocking de cette Dunk Low mise sur la simplicité. La silhouette basse propose ainsi une conception entièrement en cuir lisse, dont la tige blanche est contrastée par des empiècements noirs. Ces deux couleurs synonymes d’intemporalité se côtoient également sur les semelles, jusqu’aux brandings sur la languette et le talon. Sobre mais efficace !
-            </p>
-            <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-xl" href="#">Voir plus</a>
+      <section class="page-section clearfix">
+        <div class="container">
+          <video controls autoplay>
+                <source src="../assets/video/sneakersStore.mp4" type=video/mp4>
+              </video>
+          <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="../assets/img/panda.jpg" alt="">
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper">Nike Dunk Low White Black « Panda »</span>
+              </h2>
+              <p class="mb-3">Le color blocking de cette Dunk Low mise sur la simplicité. La silhouette basse propose ainsi
+                une conception entièrement en cuir lisse, dont la tige blanche est contrastée par des empiècements noirs.
+                Ces deux couleurs synonymes d’intemporalité se côtoient également sur les semelles, jusqu’aux brandings sur
+                la languette et le talon. Sobre mais efficace !
+              </p>
+              <div class="intro-button mx-auto">
+                <a class="btn btn-primary btn-xl" href="#">Voir plus</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <section class="page-section cta">
       <div class="container">
