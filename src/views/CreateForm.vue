@@ -74,7 +74,7 @@
 <script>
  import axios from 'axios'
 
-  const API_SNEAKERS = 'https://127.0.0.1:8000/sneakers';
+  const API_SNEAKERS = 'http://127.0.0.1:8000/sneakers';
 
   export default {
     name: 'CreateForm',
@@ -102,6 +102,8 @@
       },
       async createNewSneaker(){
         console.warn('ici en create')
+        console.log(this.sneakers)
+
         const data = await axios.post(API_SNEAKERS,
           this.sneakers,
         {  headers: {

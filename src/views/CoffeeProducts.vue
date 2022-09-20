@@ -5,7 +5,10 @@
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
             <h1 class="display-4">Nos sneakers</h1>
-            <button @click="gotToUpdate('new')">nouvel article</button>
+            
+            <button class="btn btn-primary btn-xl" @click="gotToUpdate('new')">Nouvel Article</button>
+            <br>
+            <br>
             <table class="table table-striped table-sm">
               <thead>
                   <tr>
@@ -24,13 +27,13 @@
                 <tr v-for="sneakers in result" :key="sneakers.id">
                   <td>{{sneakers.name}}</td>
                   <td>{{sneakers.marque}}</td>
-                  <td>{{sneakers.prix}}</td>
-                  <td><img :src="sneakers.image" alt=""></td>
+                  <td>{{sneakers.prix}} €</td>
+                  <td><img :src="sneakers.image" height="150" alt=""></td>
                   <td>{{sneakers.description}}</td>
                   <td>{{sneakers.annee}}</td>
-                  <td><button @click="gotToDetails(sneakers.id)">👀</button></td>
-                  <td><button @click="gotToUpdate(sneakers.id)">✏</button></td>
-                  <td><button @click="gotToDelete(sneakers.id)">🚮</button></td>
+                  <td><button class="btn btn-primary btn" @click="gotToDetails(sneakers.id)">👀</button></td>
+                  <td><button class="btn btn-primary btn" @click="gotToUpdate(sneakers.id)">✏</button></td>
+                  <td><button class="btn btn-primary btn" @click="gotToDelete(sneakers.id)">🚮</button></td>
               </tr>
               </tbody>
               </table>
@@ -44,7 +47,7 @@
 <script>
 import axios from 'axios'
 
-const API_SNEAKERS = 'https://127.0.0.1:8000/sneakers';
+const API_SNEAKERS = 'http://127.0.0.1:8000/sneakers';
 
 export default {
 name: 'ProductsView',
@@ -62,7 +65,7 @@ methods:{
   },
   gotToDetails(id){
     // this.$router.push('/products/'+coffeeId)
-    this.$router.push({name:'productsDetails', params:{id:id}})
+    this.$router.push({name:'ProductsDetails', params:{id:id}})
   },
   gotToUpdate(id){
     // this.$router.push('/products/'+coffeeId)
