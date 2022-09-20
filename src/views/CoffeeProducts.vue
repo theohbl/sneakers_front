@@ -28,7 +28,7 @@
                   <td>{{sneakers.name}}</td>
                   <td>{{sneakers.marque}}</td>
                   <td>{{sneakers.prix}} €</td>
-                  <td><img :src="sneakers.image" height="150" alt=""></td>
+                  <td><a @click="gotToDetails(sneakers.id)"><img :src="sneakers.image" height="150" alt=""></a></td>
                   <td>{{sneakers.description}}</td>
                   <td>{{sneakers.annee}}</td>
                   <td><button class="btn btn-primary btn" @click="gotToDetails(sneakers.id)">👀</button></td>
