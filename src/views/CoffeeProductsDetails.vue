@@ -6,18 +6,17 @@
             <div class="row">
                 <div class="col-6">
                     <div class="jumbotron jumbotron-fluid">
-                        <img :src="currentCoffee.images[0]" style="height:250px" alt="">
+                        <img :src="sneakers.image" style="height:250px" alt="">
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="jumbotron jumbotron-fluid">
-                        <h5>{{currentCoffee.titre}}</h5>
+                        <h5>{{sneakers.name}}</h5>
                         <ul class="list-group">
-                            <li class="list-group-item">{{currentCoffee.marque}}</li>
-                            <li class="list-group-item">{{currentCoffee.prix}} €</li>
-                            <li class="list-group-item">{{currentCoffee.conditionnement}}</li>
-                            <li class="list-group-item">{{currentCoffee.origin}}</li>
-                            <li class="list-group-item">Torrefaction: {{currentCoffee.torrefaction}}</li>
+                            <li class="list-group-item">{{sneakers.marque}}</li>
+                            <li class="list-group-item">{{sneakers.prix}} €</li>
+                            <li class="list-group-item">{{sneakers.description}}</li>
+                            <li class="list-group-item">{{sneakers.annee}}</li>
                         </ul>
                     </div>
                 </div>
@@ -32,23 +31,24 @@
 </template>
 
 <script>
+import axios from 'axios'
 
-import {coffee} from '@/assets/js/Coffee'
+const API_SNEAKERS = 'https://127.0.0.1:8000/sneakers';
+
 
 
 export default {
   name: 'CoffeeProductsDetails',
   data:()=>({
-      allCoffee:coffee,
-      currentCoffee:{}
+	sneakers:[]
   }),
-  methods:{
+  methods: {
 
   },
-  created(){
-      const { productId } = this.$route.params;
-      this.currentCoffee  = coffee.find((cof)=>cof.id==productId)
-      console.log(productId)
-  }
+  async created() {
+	let {id}= this.$route.params;
+	const data = await axios.get(API_SNEAKERS + '/' + id);
+    this.sneakers=data.data.message
+  },
 }
 </script>

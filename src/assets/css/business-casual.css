@@ -83,7 +83,7 @@ p {
 }
 
 #mainNav .navbar-brand {
-  color: #5D8BF4;
+  color: #5D8BF4 !important;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {

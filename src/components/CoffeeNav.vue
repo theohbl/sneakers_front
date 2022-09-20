@@ -19,6 +19,9 @@
             <li class="nav-item px-lg-4">
               <router-link class="nav-link text-uppercase text-expanded" :to="{ name: 'Store' }">Store</router-link>
             </li>
+            <li class="nav-item px-lg-4">
+              <router-link class="nav-link text-uppercase text-expanded" :to="{ name: 'create' }">Formulaire</router-link>
+            </li>
           </ul>
         </div>
       </div>
