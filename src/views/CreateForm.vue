@@ -84,8 +84,8 @@
         sneakers:{
           name:'',
           marque:'',
-          prix:'Seinen',
-          description:'true',
+          prix:'',
+          description:'',
           annee:'',
           image:''
         }
@@ -102,8 +102,6 @@
       },
       async createNewSneaker(){
         console.warn('ici en create')
-        console.log(this.sneakers)
-
         const data = await axios.post(API_SNEAKERS,
           this.sneakers,
         {  headers: {
@@ -138,6 +136,8 @@
         this.onEdit=false;
       }else{
         this.onEdit=true;
+        const data = await axios.get(API_SNEAKERS + '/' + this.$route.params.id)
+        this.sneakers=data.data.message
       }
       console.log(this.onEdit,'🎅',this.$route.params)
     }
