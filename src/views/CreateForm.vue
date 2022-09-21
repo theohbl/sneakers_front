@@ -1,23 +1,24 @@
-<template><div class="container">
-  <div style="color: white">
+<template>
+  <div class="container">
     <br>
-    <h3>Formulaire</h3>
-    <form class="row g-3 needs-validation" novalidate>
-      <div class="col-md-4">
-        <label for="validationCustom01" class="form-label">Nom</label>
-        <input v-model='sneakers.name' type="text" class="form-control" id="validationCustom01" required>
-        <div class="valid-feedback">
-          Looks good!
+    <div style="color: black; background-color: #e2e1e1; border-radius: 10px; padding: 20px">
+      <h3>Formulaire</h3>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nom</label>
+          <input v-model='sneakers.name' type="text" class="form-control" id="validationCustom01" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationCustom02" class="form-label">Marque</label>
-        <input v-model='sneakers.marque' type="text" class="form-control" id="validationCustom02" required>
-        <div class="valid-feedback">
-          Looks good!
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Marque</label>
+          <input v-model='sneakers.marque' type="text" class="form-control" id="validationCustom02" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
-      </div>
-      <!-- <div class="col-md-3">
+        <!-- <div class="col-md-3">
         <label for="validationCustom04" class="form-label">Manga Type</label>
         <select v-model='manga.type' class="form-select" id="validationCustom04" required>
           <option selected value="">Choose...</option>
@@ -28,7 +29,7 @@
         </div>
       </div> -->
 
-      <!-- <div class="col-12">
+        <!-- <div class="col-12">
         <div class="form-check">
           <input v-model='manga.ebook' class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
           <label class="form-check-label" for="invalidCheck">
@@ -37,43 +38,42 @@
         
         </div>
       </div> -->
-      <div class="col-md-4">
-        <label for="validationCustom03" class="form-label">Prix</label>
-        <input v-model='sneakers.prix' type="text" class="form-control" id="validationCustom03" required>
-        <div class="valid-feedback">
-          Looks good!
+        <div class="col-md-4">
+          <label for="validationCustom03" class="form-label">Prix</label>
+          <input v-model='sneakers.prix' type="text" class="form-control" id="validationCustom03" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationCustom04" class="form-label">Description</label>
-        <input v-model='sneakers.description' type="text" class="form-control" id="validationCustom04" required>
-        <div class="valid-feedback">
-          Looks good!
+        <div class="col-md-4">
+          <label for="validationCustom04" class="form-label">Description</label>
+          <input v-model='sneakers.description' type="text" class="form-control" id="validationCustom04" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationCustom05" class="form-label">Année</label>
-        <input v-model='sneakers.annee' type="text" class="form-control" id="validationCustom05" required>
-        <div class="valid-feedback">
-          Looks good!
+        <div class="col-md-4">
+          <label for="validationCustom05" class="form-label">Année</label>
+          <input v-model='sneakers.annee' type="text" class="form-control" id="validationCustom05" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationCustom06" class="form-label">Image</label>
-        <input v-model='sneakers.image' type="text" class="form-control" id="validationCustom06" required>
-        <div class="valid-feedback">
-          Looks good!
+        <div class="col-md-4">
+          <label for="validationCustom06" class="form-label">Image</label>
+          <input v-model='sneakers.image' type="text" class="form-control" id="validationCustom06" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
-      </div>
-      <div class="col-12">
-        <br>
-        <button @click='handleSaveBtn' class="btn btn-primary" type="button">Create or Edit</button>
-      </div>
-    </form>
+        <div class="col-12">
+          <br>
+          <button @click='handleSaveBtn' class="btn btn-primary" type="button">Create or Edit</button>
+        </div>
+      </form>
+    </div>
     <br>
   </div>
-</div>
-
 </template>
 
 <script>
