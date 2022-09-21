@@ -1,5 +1,5 @@
 <template>
-  <section class="page-section cta">
+  <section class="cta">
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
