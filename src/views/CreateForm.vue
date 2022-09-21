@@ -1,5 +1,6 @@
-<template>
-  <div class="container">
+<template><div class="container">
+  <div style="color: white">
+    <br>
     <h3>Formulaire</h3>
     <form class="row g-3 needs-validation" novalidate>
       <div class="col-md-4">
@@ -65,10 +66,13 @@
         </div>
       </div>
       <div class="col-12">
+        <br>
         <button @click='handleSaveBtn' class="btn btn-primary" type="button">Create or Edit</button>
       </div>
     </form>
+    <br>
   </div>
+</div>
 
 </template>
 

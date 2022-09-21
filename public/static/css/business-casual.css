@@ -100,7 +100,7 @@ p {
     font-size: 0.9rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: rgba(255, 255, 255, 0.4);
+    color:#D72323;
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
     color: #D72323;
@@ -245,8 +245,8 @@ p {
 }
 
 .btn-primary {
-  background-color: #3E3636;
-  border-color: #3E3636;
+  background-color: #D72323;
+  border-color: #D72323;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
